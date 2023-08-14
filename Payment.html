@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAY NOW</title>
+  <link rel="stylesheet" href="resources\style\Payment.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/style/ticket.css">
+  <!-- Add any other CSS or JavaScript libraries if needed -->
+</head>
+
+<body>
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="Ticket.html">Home</a></li>
+          <li><a href="Details.html">Details</a></li>
+          <li><a href="Payment.html">Payment</a></li>
+          <li><a href="Confirmation.html">Confirmation</a></li>
+          <li> <i class="fa fa-search"></i> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="content">
+      <div class="item">
+>
+        <div class="text-box">
+          <h1>PAY NOW</h1>
+          <p>Embark on an enchanting journey to Sri Lanka's turtle hatcheries, where nature's ballet unfolds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book">
+ 
+      <div class="text">
+        <h1>PAY NOW</h1>
+      </div>
+     
+        <form class="grid">
+     
+            <!---- container---->
+            
+    <div class="container">
+
+        <form action="">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h2 class="title">Billing Details</h2S>
+    
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Enter YOur Name Here">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="London">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="UK">
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">Payment</h3>
+    
+                    <div class="inputBox">
+                        <span>Cards accepted :</span>
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on Card :</span>
+                        <input type="text" placeholder= "Name On Card">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit Card Number :</span>
+                        <input type="text" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Expiry date:</span>
+                        <input type="date" placeholder="month">
+                    </div>
+  
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234" max="4">
+                        </div>
+            </div>
+    
+        </form>
+    
+    </div>    
+
+          </div>
+        </form>       
+   
+  </section>
+
+  <div class="summary" id="summarySection">
+    <section class="user-details-table">
+      <table class="user-details">
+        <tr>
+          <td>Name</td>
+          <td><span id="user-name"><Your Name ></span></td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td id="user-mobile"><Mobile Number ></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td id="user-email"><Your E-mail ></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td id="user-gender"><Male/Female ></td>
+        </tr>
+      </table>
+    </section>
+    <section class="details-summary-table">
+      <table class="table">
+
+        <!-- ...  summary table content-->
+        <div class="summary" id="summarySection">
+          <section class="user-details-table">
+            <table class="user-details">
+                <tr>
+                    <td>Name</td>
+                    <td><span id="user-name"><Your Name></span></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td id="user-mobile"><Mobile Number></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="user-email"><Your E-mail ></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="user-gender"><Male/Female></td>
+                </tr>
+            </table>
+        </section>
+          <section class="details-summary-table">
+            <table class="table">
+              <tr>
+                <td>Date</td>
+                <td><Current Date ></td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>08.00 am - 09.00 am</td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td>1 hr (01: Normal, 00): Peak</td>
+              </tr>
+              <tr class="sub-head">
+                <td>Tickets</td>
+                <td>Charges</td>
+              </tr>
+              <tr class="hide" id="sl-adults-row">
+                <td data-ticket-type="SL Adult">1 SL Adult</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide">
+                <td data-ticket-type="SL Child">1 SL Child</td>
+                <td>$0</td>
+              </tr>
+              <tr id="foreign-adults-row">
+                <td data-ticket-type="Foreign Adult">1 Foreigner Adult</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide" id="foreign-child-row">
+                <td data-ticket-type="Foreign Child">1 Foreigner Child</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide" id="infant-row">
+                <td data-ticket-type="Infant">Infants</td>
+                <td>$0</td>
+              </tr>
+              <tfoot>
+                <tr>
+                  <td>Total Payables</td>
+                  <td id="totalPayables">$0</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+      
+            
+          </div>
+      
+      </table>
+    </section>
+          <center>
+                 <a href="Confirmation.html"><button class="pay-btn" type="button" id="payButton">PAY</button></a>
+
+                </center>
+
+                <section class="footer">
+                  <h6>Protecting marine life and preserving our oceans, one turtle at a time</h6>
+                  <h4>HATCHWISE CEYLON®</h4>
+                  <p>© 2023 All Rights Reserved.</p>
+                  <div class="legal">
+                    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+                  </div>
+                </section>
+                <script src="resources\js\Payment.js"></script>
+
+
+
+  
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html>

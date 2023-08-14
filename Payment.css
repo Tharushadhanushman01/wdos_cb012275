@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/* Header */
+
+.back-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #000;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #f44336;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f44336;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header i {
+    color: white;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+
+/* Home */
+
+.home {
+  height: 100vh;
+  color: #fff;
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  text-align: auto;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 400;
+  text-align: auto;
+}
+
+/* Book Section Styles */
+.book {
+  padding: 60px 0;
+  background: linear-gradient(120deg, #f58473, #e21a16);
+  color: #fff;
+  text-align: center;
+}
+
+.book h1 {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.book h1 span {
+  color: #f0f0f0;
+}
+
+.book input {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.book input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.book input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.book .flex {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.book .inputBox {
+  flex: 1;
+}
+
+.book .inputBox img {
+  height: 40px;
+}
+
+
+.services .box .text {
+  padding: 30px;
+  border: 1px dashed #000000;
+}
+
+/* Update the font-family for specific elements */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+  .container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+
+
+
+ /* Summary Section Styles */
+/* Summary styles */
+.summary {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.summary table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #dc8585;
+  border-radius: 5px;
+}
+
+.summary th, .summary td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.user-details-table, .details-summary-table {
+  margin-bottom: 20px;
+}
+
+.sub-head {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/* Pay button styles */
+.pay-btn {
+  background-color: #e4675e;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pay-btn:hover {
+  background-color: #e53935;
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  color: #100b0b;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  color: #0c0101;
+  margin-top: 20px;
+  font-weight: 600;
+}

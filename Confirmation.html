@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources\style\Confirmation.css">
+  <title>Confirmation</title>
+</head>
+<body class="confirmation-page">
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+       
+      </div>
+      <div class="nav">
+        <ul class="nav-list">
+          <li><a href="Ticket.html">Home</a></li>
+          <li><a href="Details.html">Details</a></li>
+          <li><a href="Payment.html">Payment</a></li>
+          <li><a href="Confirmation.html">Confirmation</a></li>
+          
+          <li><i class="fas fa-search"></i></li>
+        </ul>
+        <span class="nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></span>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <div class="confirmation-text">
+        <h1>Order Confirmed</h1>
+        <p>Thank you for your order. Your order has been confirmed. Show this confirmation at the entrance.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="summary-section">
+    <div class="summary-content">
+      <center>
+      <!-- User details and order summary tables go here -->
+  <section class="user-details-table">
+            <table class="user-details">
+                <tr>
+                    <td>Name</td>
+                    <td><span id="user-name"><Your Name ></span></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td id="user-mobile"><Mobile Number ></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="user-email"><Your E-mail ></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="user-gender"><Male/Female ></td>
+                </tr>
+            </table>
+        </section>
+          <section class="details-summary-table">
+            <table class="table">
+              <tr>
+                <td>Date</td>
+                <td><Current Date ></td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>08.00 am - 09.00 am</td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td>1 hr (01: Normal, 00): Peak</td>
+              </tr>
+              <tr class="sub-head">
+                <td>Tickets</td>
+                <td>Charges</td>
+              </tr>
+              <tr class="hide" id="sl-adults-row">
+                <td data-ticket-type="SL Adult">1 SL Adult</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide">
+                <td data-ticket-type="SL Child">1 SL Child</td>
+                <td>$0</td>
+              </tr>
+              <tr id="foreign-adults-row">
+                <td data-ticket-type="Foreign Adult">1 Foreigner Adult</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide" id="foreign-child-row">
+                <td data-ticket-type="Foreign Child">1 Foreigner Child</td>
+                <td>$0</td>
+              </tr>
+              <tr class="hide" id="infant-row">
+                <td data-ticket-type="Infant">Infants</td>
+                <td>$0</td>
+              </tr>
+              <tfoot>
+                <tr>
+                  <td>Total Payables</td>
+                  <td id="totalPayables">$0</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+    
+    </div>
+  </section>
+</center>
+<section class="footer">
+  <h6>Protecting marine life and preserving our oceans, one turtle at a time</h6>
+  <h4>HATCHWISE CEYLON®</h4>
+  <p>© 2023 All Rights Reserved.</p>
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+  </div>
+</section>
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="resources\js\Confirmation.js"></script>
+</body>
+</html>

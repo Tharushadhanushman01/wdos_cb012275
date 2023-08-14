@@ -1,0 +1,170 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Global Styles */
+body.confirmation-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #f44336;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #fdd;
+}
+
+.nav-toggle {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('../images/Things-To-Do-Mirissa-Sri-Lanka-parrot-rock.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.confirmation-text {
+  text-align: center;
+}
+
+.confirmation-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.confirmation-text p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Summary Section Styles */
+.summary-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+/* User Details Table */
+.user-details-table {
+  margin-bottom: 30px;
+}
+
+.user-details-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Order Summary Table */
+.details-summary-table {
+  background-color: #f9f9f9;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.details-summary-table th {
+  background-color: #f44336;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.details-summary-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.sub-head {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/* Add any other CSS rules you need */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f44336;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-toggle i {
+    font-size: 24px;
+  }
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  color: #0a0909;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  color: #101010;
+  margin-top: 20px;
+  font-weight: 600;
+}

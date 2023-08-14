@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="resources\style\Details.css">
+    <title>Details</title>
+</head>
+<body>
+
+<header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+            <li><a href="Ticket.html">Home</a></li>
+            <li><a href="Details.html">Details</a></li>
+            <li><a href="Payment.html">Payment</a></li>
+            <li><a href="Confirmation.html">Confirmation</a></li>
+          <li> <i class="fa fa-search"></i> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+</header>
+
+<section class="home">
+    <div class="content">
+        <div class="item">
+            <div class="content"> 
+                <div class="text">
+                  <h1>To Proceed, Enter Your Details</h1>
+                  <p>Embark on an enchanting journey to Sri Lanka's turtle hatcheries, where nature's ballet unfolds.</p>
+                </div>
+              </div>
+            </div>
+    </div>
+</section>
+<div class="grid">
+    <div class="user-details-container">
+    <section class="form">
+        <fieldset>
+            <h2>Enter your details</h2>
+            <form action="details-form">
+                <!-- Your form inputs here -->
+                <form action="details-form">
+                    <label for="name">Full Name</label><br>
+                    <input class="box1" type="text" name="firstname" id="firstname" placeholder="Enter Full Name" required>
+                  
+                      <br><br>
+                      <label for="tel">Mobile Number</label><br>
+                <select name="country" id="country" class="country">
+                    <option>+94 - Sri Lanka</option>
+                    <option>+1 - United States</option>
+                    <option>+91 - India</option>
+                    <option> +98 - Iran</option>
+                    <option>+234 - Nigeria</option>
+                    <option>+880 - Bangladesh</option>
+                    <option>+62 - Indonesia </option>
+                    <option>+55 - Brazil </option>
+                    <option >+86 - China</option>
+                    <option value="">+92 - Pakistan </option>
+                    <option value="">+7 - Russia</option>
+                </select>
+                <input class="tel-box" type="text" name="phone" id="phone" placeholder="Enter Your Mobile Number" min="10" max="10" required><br><br>
+                      
+                <label for="mail1">E-Mail</label><br>
+                <input class="box1" type="email" name="email" id="email" placeholder="example@mail.com"required><br><br>
+                      
+                <label for="mail1">Confirm E-Mail</label><br>
+                <input class="box1" type="email" name="email" id="confirm-email" placeholder="Confirm E-Mail" required><br>
+                      
+                      <br><br>
+                      
+                      <label for="gender">Gender</label><br>
+                <select id="gender">
+                    <option selected class="selected">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br>
+                      
+                      <br>
+                      <br>
+    
+                      
+                <button type="submit" id="submitBtn" class="submit-btn">Confirm with Purchase</button>
+            </form>
+        </fieldset>
+    </section>
+</div>
+
+<div class="summary" id="summarySection">
+    <table class="summary-table">
+        <tr>
+            <td>Date</td>
+            <td><Current Date ></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>08.00 am - 09.00 am</td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td>1 hr (01: Normal, 00): Peak</td>
+        </tr>
+        <!-- Other summary table rows -->
+                   <td>Name</td>
+                <td><span id="userName"><Your Name ></span></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td id="usermobile"><Mobile Number ></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="useremail"><Your E-mail ></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td id="usergender"><Male/Female ></td>
+            </tr>
+
+    </table>
+    <table class="detailSummaryTable">
+        <tr>
+            <th colspan="2">User Details</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><span id="user-name"><Your Name ></span></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td id="user-mobile"><Mobile Number ></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td id="user-email"><Your E-mail ></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td id="user-gender"><Male/Female ></td>
+        </tr>
+        <!-- Other user details table rows -->
+
+ <tr>
+                    <td>Date</td>
+                    <td><Current Date ></td>
+                </tr>
+          
+                <tr class="sub-head">
+                    <td>Tickets</td>
+                    <td>Charges</td>
+                </tr>
+                <tr class="hide" id="sl-adults-row">
+                    <td data-ticket-type="SL Adult">1 SL Adult</td>
+                    <td>$0</td>
+                </tr id="sl-child-row">
+                <tr class="hide">
+                    <td data-ticket-type="SL Child">1 SL Child</td>
+                    <td>$0</td>
+                </tr>
+                <tr id="foreign-adults-row">
+                    <td data-ticket-type="Foreign Adult">1 Foreigner Adult</td>
+                    <td>$0</td>
+                </tr>
+                <tr class="hide" id="foreign-child-row">
+                    <td data-ticket-type="Foreign Child">1 Foreigner Child</td>
+                    <td>$0</td>
+                </tr>
+                <tr class="hide" id="infant-row">
+                    <td data-ticket-type="Infant">Infants</td>
+                    <td>$0</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td>Total Amount Due</td>
+                        <td id="totalPayables">$0</td>
+                    </tr>
+                </tfoot>
+    </table>
+</div>
+
+</div>
+<section class="footer">
+    <h6>Protecting marine life and preserving our oceans, one turtle at a time</h6>
+    <h4>HATCHWISE CEYLON®</h4>
+    <p>© 2023 All Rights Reserved.</p>
+    <div class="legal">
+      <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+    </div>
+  </section>
+<script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "100vh";
+        } else {
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script src="resources\js\Details.js"></script>
+</body>
+</html>
